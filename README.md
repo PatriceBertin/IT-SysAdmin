@@ -229,8 +229,10 @@ for log in glob.glob("/var/log/*.log"):
 ```
 **Deployed via Cron:**  
 ```bash
+0 2 * * * /usr/bin/python3 /scripts/log_cleaner.py
 ```
 
+| **Task**               | **Improvement**                     |  
 
 **Goal:**  
 ✅ Save 5 hours/month of manual cleanup.  
@@ -250,7 +252,6 @@ for log in glob.glob("/var/log/*.log"):
 
 2. **🔸 12:00 PM – Update IT Wiki (Confluence)**  
    - Added **new troubleshooting guides**.  
-
 ### **Findings & Goals:**  
 ✅ **Success:** Reduced repeat tickets with better docs.  
 
@@ -305,7 +306,7 @@ for log in glob.glob("/var/log/*.log"):
 | Backup Reliability     | 99.99% success rate                 |  
 | Ticket Resolution      | 30% faster with automation          |  
 
+---
 
 
 
-0 2 * * * /usr/bin/python3 /scripts/log_cleaner.py
