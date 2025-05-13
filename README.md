@@ -31,9 +31,8 @@
 
 **Goal:**  
 
----
-
 ✅ Ensure all critical systems are operational before business hours.  
+
 ### **🔹 8:00 AM – Patch Management**  
 - **Ansible (Linux)**  
 **Tools Used:**  
