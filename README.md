@@ -34,20 +34,21 @@
 ✅ Ensure all critical systems are operational before business hours.  
 
 ### **🔹 8:00 AM – Patch Management**  
-- **Ansible (Linux)**  
+ 
 **Tools Used:**  
+- **Ansible (Linux)** 
 - **WSUS (Windows)**  
-
 - **PowerShell (Windows updates)**  
-**Steps:**  
+**Steps:**
+  1. **Linux (Debian/Ubuntu):**
    ```bash
    # Dry-run first
-1. **Linux (Debian/Ubuntu):**  
    ansible-playbook patch_servers.yml --check
    # Apply patches
+   ansible-playbook patch_servers.yml
    ```
    - Playbook ensures **reboots happen in batches** to avoid downtime.  
-   ansible-playbook patch_servers.yml
+   
 
 2. **Windows:**  
    ```powershell
